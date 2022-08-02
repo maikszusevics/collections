@@ -58,6 +58,8 @@ This code returns:
 
 ![image](https://user-images.githubusercontent.com/110176257/182365520-44f42a05-4be3-472e-86c7-ee5a6f957f39.png)
 
+Lists in python are very flexible,
+you can see in the code above you can see that `mixed_list` contains integers, strings, floats, and a list. 
 
 
 

@@ -62,4 +62,77 @@ Lists in python are very flexible,
 you can see in the code above you can see that `mixed_list` contains integers, strings, floats, and a list. 
 
 
+# Tuple
+- Tuples are immutable - cannot make changes
+- Syntax for tuples is ()
+- use case of tuples is data which doesnt get changed
+- e.g. date of birth, place of birth, planet inhabited
+
+```
+# creates a tuple
+essentialdata = ("city", "DOB", "planet")
+print(essentialdata)
+
+# prints type
+print(type(essentialdata))
+
+
+# Tuple is array, arrays start at 0 (indexing)
+print(essentialdata[1]) # outcome is "DOB"
+
+
+# essentialdata[2] = "galaxy"    You cant do this, tuple is IMMUTABLE
+
+```
+
+
+
+tuples can be mixed
+```
+mixedtuple = ("string", 7, 3.13, [1, 3, 5, 8])
+
+print(mixedtuple)
+
+print(type(mixedtuple))
+```
+this returns:
+
+![image](https://user-images.githubusercontent.com/110176257/182384903-829492d8-3a50-48a9-90b9-1c47d3bb2476.png)
+
+# Dictionaries (Dict)
+- syntax is {} with : to signify key value pair
+ ```
+devopsstudents = {
+    "key" : "value",
+    "name" : "maiks"
+
+}
+
+print(devopsstudents)
+print(type(devopsstudents))
+```
+This code returns:
+
+![image](https://user-images.githubusercontent.com/110176257/182385800-f7bf49e9-c89a-4f43-ad79-6b3d5ce064f7.png)
+
+```
+devopsstudents = {
+    "key" : "value",
+    "name" : "maiks",
+    "stream" : "tech",
+    "completed_lessons" : 3, # different data types allowed
+    "completed_lesson_names" : ["lists", "tuples", "dictionaries", "operators", "built-in methods"]
+
+}
+devopsstudents.__delitem__("stream")
+devopsstudents["completed_lessons"] = 2
+devopsstudents["completed_lesson_names"].remove("operators")
+print(devopsstudents)
+
+
+```
+
+this returns:
+
+![image](https://user-images.githubusercontent.com/110176257/182390074-4932cd88-47cd-4c85-90ea-df2d29e71c00.png)
 
